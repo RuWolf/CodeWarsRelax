@@ -1,0 +1,41 @@
+
+<div class="page-header">
+    <h1>CodeWars relax</h1>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login">{{name}}</a></li>
+                <li><a href="/logout">Log Out</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container row">
+    <div class="jumbotron col-sm-4 pull-center">
+        <form name="nikName" method="post">
+            <div>
+                <label>Nick in CodeWars:</label>
+                <input type="text" name="username" value="{{name}}" />
+            </div>
+            <div>
+                <input style="margin-top: 20px" class="btn btn-primary" type="submit" value="Relax and statistic" />
+            </div>
+        </form>
+    </div>
+    <div id="statistic" >
+
+    </div>
+</div>
+<div id="ballField"></div>
+
+
+<!--<canvas width="960" height="500"></canvas>-->
+<!--<button id="statistic" class="btn btn-primary">Relax</button>-->
+
+
+
