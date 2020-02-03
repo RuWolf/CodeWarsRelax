@@ -3,15 +3,12 @@ const bcrypt = require("bcrypt");
 const { sessionChecker } = require("../middleware/auth");
 const User = require("../models/users");
 
-
-
 const saltRounds = 10;
 const router = express.Router();
 
 router.get("/", sessionChecker, (req, res) => {
   res.redirect("/login");
 });
-
 
 router.post("/getCode", (req, res) => {
   const { user } = req.session;
